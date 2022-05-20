@@ -5,7 +5,7 @@
     font-family: weather-regular;
 }
 
-@font-face {
+/* @font-face {
     font-family: noto-sans-regular;
     src: url(./Noto_Sans/NotoSans-Regular.ttf);
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: noto-sans-bold;
     src: url(./Noto_Sans/NotoSans-Bold.ttf);
-}
+} */
 
 @font-face {
     font-family: weather-exbold;

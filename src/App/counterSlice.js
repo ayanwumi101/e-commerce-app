@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
-
+import data from '../data'
 
 export const counterSlice = createSlice({
     name: 'counter',
@@ -9,8 +9,10 @@ export const counterSlice = createSlice({
     reducers: {
         addToCart: (state, action) => {
             const item = state.cart.find(i => i.id === action.payload)
-            if(item === undefined){
-                const newItem ={id: action.payload, count: 1}
+            if (item === undefined) {
+                const c = data.filter((e) => e.id === action.payload)[0]
+                console.log(c)
+                const newItem = { id: action.payload, count: 1, price: c.price }
                 state.cart.push(newItem)
             }
         },
